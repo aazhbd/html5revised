@@ -1,0 +1,159 @@
+<!--
+/**
+* Basic Template.
+*
+* @author        ArticulateLogic Labs
+* @author        Abdullah Al Zakir Hossain, Email: aazhbd@yahoo.com 
+* @copyright     Copyright (c)2013 ArticulateLogic Labs
+* @link          http://www.articulatelogic.com
+* @since         Version 1.0
+*  
+*/
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Basic Template</title>
+    <link href="css/zstyle.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/forms.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/formstyler.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!--[if lte IE 6]>
+    <link href="css/msie.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <![endif]-->
+</head>
+
+<body>
+<div id="contentheader">
+    <div id="banner">
+        <img src="images/logo.gif" id="logo"/>
+
+        <div id="search">
+            <form class="frmsearch" method="post" id="frmsearch" action="">
+					<span>
+						<input type="text" class="search" onclick="this.value=''" value="Search" name="search"
+                               id="insearch">
+						<input type="submit" class="btnsearch" value="Search" id="submit" name="submit">
+					</span>
+            </form>
+        </div>
+
+        <div id="navigatemenu">
+            <ul id="nav">
+                <li><a href="/home">Home</a></li>
+
+                <li><a href="/lorem_Ipsum">Menu</a>
+                    <ul>
+                        <li><a href="/lorem_Ipsum">Menu Item</a></li>
+                        <li><a href="/lorem_Ipsum">Menu Item</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Dropdown</a>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li>Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="topright">
+        <a href="/logout">Logout</a>
+        |
+        <a href="/uhome">Member Home</a>
+    </div>
+
+</div>
+
+<div id="contentbody">
+    <!--<div id="reports">message</div> -->
+
+
+    <h2 class="title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </h2>
+
+    <div class="body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+
+        <form name="articulate" id="art-form" method="post" action="#">
+            <div id="wrapping" class="clearfix">
+                <section id="aligned">
+                    <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1"
+                           class="txtinput">
+
+                    <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off"
+                           tabindex="2" class="txtinput">
+
+                    <input type="url" name="website" id="website" placeholder="Website URL" autocomplete="off"
+                           tabindex="3" class="txtinput">
+
+                    <input type="tel" name="telephone" id="telephone" placeholder="Phone number?(optional)" tabindex="4"
+                           class="txtinput">
+
+                    <textarea name="message" id="message" placeholder="Enter a cool message..." tabindex="5"
+                              class="txtblock"></textarea>
+
+                    <input type="text" name="birthdate" id="birthdate" placeholder="Enter Birthdate" autocomplete="off" tabindex="1"
+                           class="txtinput">
+                </section>
+
+                <section id="aside" class="clearfix">
+                    <section id="recipientcase">
+                        <h3>Recipient:</h3>
+                        <select id="recipient" name="recipient" tabindex="6" class="selmenu">
+                            <option value="staff">Site Staff</option>
+                            <option value="editor">Editor-in-Chief</option>
+                            <option value="technical">Tech Department</option>
+                            <option value="pr">Public Relations</option>
+                            <option value="support">General Support</option>
+                        </select>
+                    </section>
+
+                    <section id="prioritycase">
+                        <h3>Priority:</h3>
+                            <span class="radiobadge">
+                                <input type="radio" id="low" name="priority" value="low">
+                                <label for="low">Low</label>
+                            </span>
+                        
+                            <span class="radiobadge">
+                                <input type="radio" id="med" name="priority" value="med" checked="checked">
+                                <label for="med">Medium</label>
+                            </span>
+                        
+                            <span class="radiobadge">
+                                <input type="radio" id="high" name="priority" value="high">
+                                <label for="high">High</label>
+                            </span>
+                    </section>
+                </section>
+            </div>
+
+            <section id="buttons">
+                <input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+                <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+                <br style="clear:both;">
+            </section>
+        </form>
+    </div>
+</div>
+
+<div id="footer">
+    <p>
+        &copy; 2015 <a href="http://www.articulatelogic.com/">ArticulateLogic.com</a>
+        | Design: <a href="mailto:aazhbd@yahoo.com">aazhbd</a>
+    </p>
+</div>
+</body>
+</html>
