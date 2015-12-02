@@ -16,6 +16,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Basic Template</title>
     <link href="css/zstyle.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/pure.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/menus.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="css/forms.css" rel="stylesheet" type="text/css" media="screen" />
 	<!--[if lte IE 6]>
 	<link href="css/msie.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -27,58 +29,47 @@
         <div id="banner">
             <img src="images/logo.gif" id="logo" />
 
-			<div id="search">
+			<div id="navigatemenu">
+				<div class="pure-menu pure-menu-horizontal">
+					<ul class="pure-menu-list">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">Discussion</a></li>
+						<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+							<a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+							<ul class="pure-menu-children">
+								<li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+								<li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+								<li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="search" class="pure-form">
 				<form class="frmsearch" method="post" id="frmsearch" action="">
 					<span>
-						<input type="text" class="search" onclick="this.value=''" value="Search" name="search" id="insearch">
+						<input type="text" class="search"  placeholder="Search" name="search">
 						<input type="submit" class="btnsearch" value="Search" id="submit" name="submit">
 					</span>
 				</form>
 			</div>
+			
+			<div id="topright">
+				<a href="/logout">Logout</a>
+				|
+				<a href="/uhome">Member Home</a>
+			</div>
 
-			<div id="navigatemenu">
-		        <ul id="nav">
-					<li><a href="/home">Home</a></li>
-
-					<li><a href="/lorem_Ipsum">Menu</a>
-						<ul>
-							<li><a href="/lorem_Ipsum">Menu Item</a></li>
-							<li><a href="/lorem_Ipsum">Menu Item</a></li>
-						</ul>
-					</li>
-					
-					<li>
-						<a href="#">Dropdown</a>
-						<ul>
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li>Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-				</ul>
-		    </div>
-
-        </div>
-
-        <div id="topright">
-            <a href="/logout">Logout</a>
-			|
-			<a href="/uhome">Member Home</a>
         </div>
         
     </div>
     
     <div id="contentbody">
         <!--<div id="reports">message</div> -->
-		
-		
-
-        <h2 class="title">
+        <div class="title">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit
-		</h2>
+		</div>
 
 		<div class="body">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -87,17 +78,37 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<form class="pure-form pure-form-aligned">
+				<fieldset>
+					<div class="pure-control-group">
+						<label for="name">Username</label>
+						<input id="name" type="text" placeholder="Username">
+					</div>
 			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+					<div class="pure-control-group">
+						<label for="password">Password</label>
+						<input id="password" type="password" placeholder="Password">
+					</div>
 			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+					<div class="pure-control-group">
+						<label for="email">Email Address</label>
+						<input id="email" type="email" placeholder="Email Address">
+					</div>
+			
+					<div class="pure-control-group">
+						<label for="foo">Supercalifragilistic Label</label>
+						<input id="foo" type="text" placeholder="Enter something here...">
+					</div>
+			
+					<div class="pure-controls">
+						<label for="cb" class="pure-checkbox">
+							<input id="cb" type="checkbox"> I've read the terms and conditions
+						</label>
+			
+						<button type="submit" class="pure-button pure-button-primary">Submit</button>
+					</div>
+				</fieldset>
+			</form>
 			
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
