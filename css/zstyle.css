@@ -85,8 +85,8 @@ img {
     top: 0px;
     padding: 11px 0;
     width: 100%;
-    overflow: auto;
-    z-index: 999;
+    overflow: visible;
+    z-index: 100;
 }
 
 #navigatemenu {
